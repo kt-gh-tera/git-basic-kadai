@@ -15,15 +15,6 @@ warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF t
 $ git commit -m "2回目"
 [main d17a888] 2回目
  1 file changed, 1 insertion(+)
-$ git log
-commit d17a8883fe3975c77314e5886774f203cb23e00e (HEAD -> main)
-Author: kt <kt15cc100@yahoo.co.jp>
-Date:   Sun Jul 13 07:36:41 2025 +0900
-
-    2回目
-
-commit 70a5967cd83b2d01bf116f159d35a40d89f95bd0
-Author: kt <kt15cc100@yahoo.co.jp>
-Date:   Sun Jul 13 07:27:01 2025 +0900
-
-    1回目
+$ git log --oneline
+d17a888 (HEAD -> main) 2回目
+70a5967 1回目
