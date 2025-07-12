@@ -1,0 +1,29 @@
+$ mkdir git_challenge
+$ cd git_challenge/
+$ git init
+Initialized empty Git repository in D:/課題/git_challenge/.git/
+$ echo "Hello, world!" >> hello_world.txt
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+$ git commit -m "1回目"
+[main (root-commit) 70a5967] 1回目 
+ 1 file changed, 1 insertion(+)    
+ create mode 100644 hello_world.txt
+$ echo "こんにちは、世界！" >> hello_world.txt
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+$ git commit -m "2回目"
+[main d17a888] 2回目
+ 1 file changed, 1 insertion(+)
+$ git log
+commit d17a8883fe3975c77314e5886774f203cb23e00e (HEAD -> main)
+Author: kt <kt15cc100@yahoo.co.jp>
+Date:   Sun Jul 13 07:36:41 2025 +0900
+
+    2回目
+
+commit 70a5967cd83b2d01bf116f159d35a40d89f95bd0
+Author: kt <kt15cc100@yahoo.co.jp>
+Date:   Sun Jul 13 07:27:01 2025 +0900
+
+    1回目
